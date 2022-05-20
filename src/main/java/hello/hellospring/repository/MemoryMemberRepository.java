@@ -1,9 +1,11 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+//@Repository
 public class MemoryMemberRepository implements MemberRepository{
 
     //현재 store 변수가 임시 저장소의 기능을 하는 것이다. (우리는 현재 DB를 사용하지 않고 진행하고 있기 때문이다.)

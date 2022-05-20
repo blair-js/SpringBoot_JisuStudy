@@ -3,10 +3,13 @@ package hello.hellospring.service;
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+//@Service
 public class MemberService {
 
     //0520 삭제
@@ -17,6 +20,7 @@ public class MemberService {
     //매개변수로 memberRepository 객체를 넣어준다. => 매개변수로 들어온 객체 memberRepository가 memberRepository의 필드값에 대입된다.
     private final MemberRepository memberRepository;
 
+    //@Autowired
     public MemberService(MemberRepository memberRepository){
         this.memberRepository = memberRepository;
     }
